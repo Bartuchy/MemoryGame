@@ -26,11 +26,11 @@ struct CardView: View {
             }
             .opacity(isFaceUp ? 1 : 0)
             
-            rectangle.fill().opacity(isFaceUp ? 0 : 1)
+            rectangle.fill(.blue).opacity(isFaceUp ? 0 : 1)
         }
         .onTapGesture {
             isFaceUp.toggle()
-        }
+        }.aspectRatio(2.0/3.0, contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
           
 
     }
